@@ -36,7 +36,7 @@ html{
 nav {
     background: white;
     width: 100%;
-    height: 5rem;
+    height: 10rem;
     display: grid;
     place-items: left;
     position: fixed;
@@ -112,11 +112,11 @@ nav {
     .nav_links li a {
         background: white;
         height: 4rem;
-        width: 100%;
+        width: 20rem;
         display: flex;
         align-items: center;
         padding: 0 5rem 0 2rem;
-        border: 1px solid #E1BFC2;
+        
     }
 
     .nav_toggle-btn{
@@ -305,17 +305,6 @@ nav {
 }
 
 
-@media screen and (max-width:991px) {
-    html{
-        font-size: 55%;
-    }
-    .partners{
-        grid-template-columns: auto auto auto auto;
-        justify-content: center;
-
-    }
-    
-}
 
 /*services*/
 .services{
@@ -330,6 +319,7 @@ nav {
     align-content: center;
     justify-content: center;
     margin-top: 40px;
+    padding-left: 40px;
 }
 .services_content{
     display: flex;
@@ -337,11 +327,14 @@ nav {
     align-content: center;
     
     
+    
 }
 
 .elbridge_content{
     font-size: 15px;
     margin-top: 20px;
+    width: 380px;
+    
     
 
     
@@ -613,3 +606,26 @@ nav {
         align-items: center;
     }
 }
+@media screen and (max-width:1700px) {
+    html{
+        font-size: 50%;
+        width: 100%;
+    }
+    .partners{
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+
+    }
+    
+}
+@media only screen and (max-width: 400px) {
+    .nav {
+      width: 650px;
+    }
+
+    section{
+        width: 600px;
+    }
+    
+
+  }
