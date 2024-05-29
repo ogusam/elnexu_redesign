@@ -387,34 +387,40 @@ nav {
 }
 #myBtn{
     width: 150px;
-    height: 40px;
+    height: 48px;
     background: #002580;
     color: white;
     border-radius: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 20px;
+    border: none;
+    outline: none;
 
 }
 #MyBtn{
     width: 150px;
-    height: 40px;
+    height: 48px;
     background: #002580;
     color: white;
     border-radius: 20px;
     margin-top: 20px;
     font-size: 20px;
     margin-bottom: 20px;
+    border: none;
+    outline: none;
 
 }
 .elpay_btn{
     width: 150px;
-    height: 40px;
+    height: 48px;
     background: #002580;
     color: white;
     border-radius: 20px;
     margin-top: 20px;
     margin-bottom: 30px;
+    border: none;
+    outline: none;
 
 }
 
@@ -487,12 +493,14 @@ nav {
 }
 .Sbtn{
     width: 240px;
-    height: 50px;
+    height: 48px;
     background: #002581;
     color: white;
     border-radius: 25px;
     margin-top: 30px;
     font-size: 20px;
+    border: none;
+    outline: none;
 }
 
 /*about us */
@@ -563,7 +571,7 @@ nav {
     font-size: 20px;
 }
 .Gbtn{
-    height: 40px;
+    height: 48px;
     width: 290px;
     background:#002581;
     border-radius: 20px;
@@ -571,6 +579,8 @@ nav {
     margin-bottom: 50px;
     color: #FFFFFF;
     font-size: 20px;
+    border: none;
+    outline: none;
 }
 
 
