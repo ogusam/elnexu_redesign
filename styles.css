@@ -348,8 +348,9 @@ nav {
 
 }
 .elbridge_content{
-    font-size: 15px;
+    font-size: 17px;
     margin-top: 20px;
+    line-height: 2.5rem;
     
     
     
@@ -360,6 +361,7 @@ nav {
     font-size: 17px;
     margin-top: 20px;
     width: 380px;
+    line-height: 2rem;
 }
 
 .consults >h1{
@@ -379,7 +381,9 @@ nav {
 .elpay >p{
     font-size: 17px;
     margin-bottom: 20px;
-    color:rgba(0, 0, 0, 0.594)
+    color:rgba(0, 0, 0, 0.594);
+    line-height: 2.5rem;
+    
 }
 #myBtn{
     width: 150px;
