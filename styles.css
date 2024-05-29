@@ -44,7 +44,7 @@ nav {
     top: 0;
     left: 0;
     z-index: 2;
-    box-shadow: black;
+    box-shadow:0 .5rem 1rem rgba(0 ,0 ,0, 0.1)
     
 }
 
@@ -396,7 +396,7 @@ nav {
     font-size: 20px;
     border: none;
     outline: none;
-
+    font-style:plus Jakarta sans;
 }
 #MyBtn{
     width: 150px;
@@ -409,6 +409,7 @@ nav {
     margin-bottom: 20px;
     border: none;
     outline: none;
+    font-style:plus Jakarta sans;
 
 }
 .elpay_btn{
@@ -421,6 +422,7 @@ nav {
     margin-bottom: 30px;
     border: none;
     outline: none;
+    font-style:plus Jakarta sans;
 
 }
 
