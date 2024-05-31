@@ -1,0 +1,133 @@
+/* style.css */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+  }
+  
+  h1 {
+    text-align: center;  
+  }
+  
+  input, select, textarea {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #aaaaaa;
+    
+  
+    
+  }
+  
+  input.invalid {
+    background-color: red;
+  }
+  
+  .tab {
+    display: none;
+    
+  }
+
+  
+  
+  
+  button {
+    background-color: #002580;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Arial;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  #prevBtn {
+    background-color: #bbbbbb;
+  }
+  
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;   
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  .step.finish {
+    background-color: #002580;
+  }
+  
+
+  .logo{
+    height: 3rem;
+    width: 3rem;
+    display: grid;
+    margin-right: .5rem;
+    
+}
+#logo{
+    display: flex;
+    flex-direction:row;
+    margin-left: 6rem;
+    justify-content: space-between;
+    
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+nav {
+    background: white;
+    width: 100%;
+    height: 5rem;
+    display: grid;
+    place-items: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    box-shadow:0 .5rem 1rem rgba(0 ,0 ,0, 0.1)
+    
+}
+
+.nav_container{
+    display: flex;
+    width: var(--container-width-lg);
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+    
+}
+
+
+
+
+

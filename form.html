@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    
+    <!--<link rel="stylesheet" href="./style.css">-->
+
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <div class="nav_container">
+            <div id="logo">
+            <img src="./assets/EL1 PNG.png" alt="" class="logo"/><span style="margin-top: 18px; font-weight: 600;font-size: 15px;    color:rgba(0, 0, 0, 0.594);">
+            Elnexus Consults</span>
+            </div>
+            <div>
+                <button><a href="index.html" style="color: white;">back</a></button>
+            </div>
+           
+        </div>
+    </nav>
+
+    <div>
+        <form id="regForm"  action="https://formsubmit.co/elnexuconsults@gmail.com" method="POST" >
+            <!-- Page 1 -->
+            <div class="tab">
+        
+              <h1>Basic Information:</h1>
+              <div>
+                <label>Title:</label>
+                <select name="title">
+                    <option value="Mr">Mr.</option>
+                    <option value="Mrs">Mrs.</option>
+                    <option value="Ms">Ms.</option>
+                    <option value="Dr">Dr.</option>
+                    <option value="Other">Other</option>
+                  </select>
+    
+              </div>
+              
+              <div>
+                <label>Surname</label>
+                <input placeholder="Surname..." oninput="this.className = ''" name="surname">
+              </div>
+              <div>
+                <label>First Name:</label>
+                <input placeholder="First name..." oninput="this.className = ''" name="fname">
+              </div>
+              <div>
+                <label>Middle Name:</label>
+                <input placeholder="Middle name..." oninput="this.className = ''" name="mname">
+
+              </div>
+              <div>
+                <label>Email:</label>
+                <input placeholder="Date of Birth..."  oninput="this.className = ''"  type="date" name="dob">
+              </div>
+              <div>
+                <label>Gender:</label>
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+    
+              </div>
+              <div>
+                <label>Nationality:</label>
+                <input placeholder="Nationality..." oninput="this.className = ''" name="nationality">
+              </div>
+                <div>
+                    <label>Mother's maiden Name</label>
+                    <input placeholder="Mother's maiden name..." oninput="this.className = ''" name="mother_maiden">
+                </div>
+              
+              <div>
+                <label>Phone Number:</label>
+                <input placeholder="Phone number..." oninput="this.className = ''" name="phone" type="tel">
+            </div>
+            <div>
+                <label>Other:</label>
+                <input placeholder="Other..." oninput="this.className = ''" name="other">
+            </div>
+            
+              
+            </div>
+          
+            <!-- Page 2 -->
+            <div class="tab">
+              <h1>Contact Details:</h1>
+              <div><label>Email</label>
+              <input placeholder="Email..." oninput="this.className = ''" name="email">
+              </div>
+              <p><input placeholder="BVN..." oninput="this.className = ''" name="bvn" maxlength="11" type="text"></p>
+              <p><input placeholder="Residential address..." oninput="this.className = ''" name="address"></p>
+              <p><input placeholder="State..." oninput="this.className = ''" name="state"></p>
+              <p><input placeholder="Local Government..." oninput="this.className = ''" name="localgovt"></p>
+              <p><input placeholder="Closest landmark..." oninput="this.className = ''" name="landmark"></p>
+              <p><input placeholder="Nearest bus stop..." oninput="this.className = ''" name="busstop"></p>
+            </div>
+          
+            <!-- Page 3 -->
+            <div class="tab">
+              <h1>Business Information:</h1>
+              <p><input placeholder="Business name..." oninput="this.className = ''" name="business_name"></p>
+              <p><input placeholder="Business address..." oninput="this.className = ''" name="business_address"></p>
+              <p><input placeholder="Business type..." oninput="this.className = ''" name="business_type"></p>
+              <p><input placeholder="Business phone..." oninput="this.className = ''" name="business_phone"></p>
+            </div>
+          
+            <!-- Page 4 -->
+            <div class="tab">
+              <h1>Terms and Conditions:</h1>
+              <p><textarea name="terms" readonly>
+          Terms and conditions...
+          You must agree before submitting.
+              </textarea></p>
+              <p><label><input type="checkbox" name="agree" required> I agree to the terms and conditions</label></p>
+            </div>
+          
+            <div style="overflow:auto;">
+              <div style="float:right;">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+              </div>
+            </div>
+          
+            <!-- Circles which indicates the steps of the form: -->
+            <div style="text-align:center;margin-top:40px;">
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+            </div>
+          </form>
+          
+          <script src="form.js"></script>
+          
+    </div>
+</body>
+</html>

@@ -1,3 +1,5 @@
+
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -738,4 +740,66 @@ nav {
         width: 600px;
     }
 
+  }
+
+
+  /*Slider*/
+
+  #slider{
+    height: 500px;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    background: #001341;
+
+  }
+  .slidercontainer{
+    width:1600px ;
+    margin: auto;
+  }
+  .subcontainer{
+    width: 85%;
+    margin: auto;
+  }
+  .slide-img{
+     width: 100%;
+    height: 375px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+  }
+  
+
+  .img1{
+    background-image: url(./assets/pos8.jpeg);
+  }
+  .img2{
+    background-image: url(./assets/pos7.png);
+  }
+  .img3{
+    background-image: url(./assets/pos6.jpg);
+  }
+  .img4{
+    background-image: url(./assets/pos3.jpg);
+  }
+  
+  .desc{
+    color: white;
+    font-size: 15px;
+  }
+ 
+  @media screen and (max-width:1600px) {
+
+    .slidercontainer{
+        width: 100%;
+
+    }
   }
