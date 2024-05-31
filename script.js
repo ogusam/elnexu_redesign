@@ -68,7 +68,7 @@ let slider = tns({
     autoplayButtonOutput :true,
     responsive: {
         1600:{
-            items : 4,
+            items : 3,
             gutter : 20
         },
         1024: {
