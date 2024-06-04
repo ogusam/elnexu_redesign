@@ -56,35 +56,65 @@ function myFunction() {
 
   
   
-/*slider*/
 
-let slider = tns({
-    container : ".my-slider",
-    "slideBy" : "1",
-    "speed" : 400,
-    "nav" : false,
-    autoplay : true,
-    controls: false,
-    autoplayButtonOutput :true,
-    responsive: {
-        1600:{
-            items : 3,
-            gutter : 20
-        },
-        1024: {
-            items:3,
-            gutter:20 
-        },
-        768: {
-            items: 3,
-            gutter: 20,
-        },
-        480:{
-            items: 1,
-            gutter:20,
+const btns = document.querySelectorAll(".nav-btn");
+const slides = document.querySelectorAll(".img-slide");
+const contents = document.querySelectorAll(".content");
 
-        }
-    }
+var sliderNav = function(manual){
+  btns.forEach((btn)=>{
+    btn.classList.remove("active");
+  });
+  slides.forEach((slide)=>{
+    slide.classList.remove("active");
+  });
 
-})
+  contents.forEach((content)=>{
+    content.classList.remove("active");
+  });
+
+  btns[manual].classList.add("active");
+  slides[manual].classList.add("active");
+  contents[manual].classList.add("active");
+};
+  btns.forEach((btn, i)=>{
+    btn.addEventListener("click", ()=>{
+      sliderNav(i);
+    });
+  });
+
+
+
+
+  const Btns = document.querySelectorAll(".Nav-btn");
+const Slides = document.querySelectorAll(".Img-slide");
+const Contents = document.querySelectorAll(".Content");
+
+var SliderNav = function(manual){
+  Btns.forEach((btn)=>{
+    btn.classList.remove("active");
+  });
+  Slides.forEach((slide)=>{
+    slide.classList.remove("active");
+  });
+
+  Contents.forEach((content)=>{
+    content.classList.remove("active");
+  });
+
+  Btns[manual].classList.add("active");
+  Slides[manual].classList.add("active");
+  Contents[manual].classList.add("active");
+};
+  Btns.forEach((btn, i)=>{
+    btn.addEventListener("click", ()=>{
+      SliderNav(i);
+    });
+  });
+
+  
+
+
+
+
 
