@@ -115,6 +115,40 @@ var SliderNav = function(manual){
   
 
 
+/*contact form */
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  // Email validation regex
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  // Phone number validation regex (basic example)
+  const phonePattern = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;    
+
+
+
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+
+  if (!emailPattern.test(email)) {
+      alert('Please enter a valid email address.');
+      event.preventDefault();  // Prevent form submission
+  }
+
+  if (!phonePattern.test(phone)) {
+      alert('Please enter a valid 11-digit phone number.');
+      event.preventDefault();  // Prevent form submission
+  }
+
+  event.preventDefault();
+    
+  // Form submission logic here (e.g., send data to server)
+  
+  // Display success message
+  document.getElementById('successMessage').style.display = 'block';
+  
+  // Clear the form
+  document.getElementById('contactForm').reset();
+
+});
 
 
 
