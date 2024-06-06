@@ -529,7 +529,7 @@ form .name input{
     line-height: 2rem;
 }
 
-.consults >h1{
+.consults >h2{
     font-size: 20px;
     margin-bottom: 8px;
     color: #002581;
@@ -538,7 +538,7 @@ form .name input{
 
     width: 380px;
 }
-.elpay >h1{
+.elpay >h2{
     margin-bottom: 8px;
     font-size: 20px;
     margin-top:20px;
@@ -1063,6 +1063,9 @@ form .name input{
     .grid{
         padding: 10px 20px;
     }
+    .services h1{
+        margin-left: 120px;  
+        }
 }
 @media screen and (max-width:1700px) {
     html{
@@ -1074,6 +1077,7 @@ form .name input{
         justify-content: center;
 
     }
+    
 
 }
 @media only screen and (max-width: 500px){
@@ -1084,6 +1088,8 @@ form .name input{
     justify-items: center;
     align-self: center;
 }
+
+    
 
 
 }
@@ -1098,6 +1104,10 @@ form .name input{
 html{
     width: 200%;
 }
+.services h1{
+    margin-left: 150px;  
+    }
+
   }
 
 
