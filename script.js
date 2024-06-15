@@ -1,3 +1,21 @@
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+
+
+
 const nav =document.querySelector('.nav_links');
 const openNavBtn = document.querySelector('#nav_toggle-open');
 const closeNavBtn = document.querySelector('#nav_toggle-close');
@@ -152,3 +170,23 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
 
 
+function changeTerminalCount(amount) {
+  const terminalInput = document.getElementById('terminals');
+  let currentCount = parseInt(terminalInput.value);
+  currentCount += amount;
+  if (currentCount < 0) currentCount = 0;
+  terminalInput.value = currentCount;
+}
+
+function changeTerminal(amount) {
+  const terminalInput = document.getElementById('pos');
+  let currentCount = parseInt(terminalInput.value);
+  currentCount += amount;
+  if (currentCount < 0) currentCount = 0;
+  terminalInput.value = currentCount;
+}
+
+document.getElementById('business-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  alert('Form submitted successfully!');
+});
