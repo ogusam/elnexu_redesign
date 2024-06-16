@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="./styles.css">
     <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <title>Elnexu Consult</title>
+    
+    
+    <title>Document</title>
+
 </head>
 <body>
+
     <nav>
         <div class="nav_container">
             <div id="logo">
@@ -34,15 +36,55 @@
         </div>
     </nav>
     <!--home-->
-    <section class="slideshow-container" id="home">
 
-        <!-- Slides -->
-        <div class="slide fade">
-            <img src="./assets/hero 1.png" style="height: 100vh;">
-            <div class="text">
-                <h1>We build both off-the-shelf and bespoke<br> financial solutions for clients</h1>
-                <p>Delivering top notch financial solutions<br> with our cutting edge technology</p>
-                <button class="homebtn"><a href="" style="color: aliceblue;">Get Started</a></button>
+    <section class="home" id="home">
+        <div class="bgImage">
+            <div class="ovelay"></div>
+            <div class="conten">
+                <div style="margin-top: 250px; margin-left: 40px;">
+                    <h1>We build both off-the-shelf and bespoke <br>financial solutions for clients</h1>
+                    <p>Delivering top notch financial solutions with our cutting edge technology</p>
+                    
+                <button class="homebtn"><a href="#form" style="color: aliceblue;">Get Started</a></button>
+
+
+                <div class="Myoverlay" id="form">
+                    <div class="wrapper">
+                        <h2>Please Fill Up the form</h2>
+                        <p id="successMessage" class="success-message">Form submitted successfully , Thank you for choosing elpay.You will receive an update within 24 hours</p>
+    
+                        <a href="#" class="close">&times;</a>
+                        <div class="formcontent">
+                            <div class="container">
+                                <form id="contactForm" action="https://formsubmit.co/elnexuconsults@gmail.com" method="POST">
+                                    <div class="name">
+                                        <div class="firstname">
+                                        <label>First Name</label>
+                                        <input type="text" id="firstname" name="firstname" required>
+                                        </div>
+                                        <div class="lastname">
+                                        <label>Last Name</label>
+                                        <input type="text" id="lastname" name="lastname" required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>Phone Number</label>
+                                        <input type="tel" id="phone" name="phone" required>
+                                    </div>
+                                    <div>
+                                        <label>Email</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                    <div>
+                                        <label>Bussiness Name</label>
+                                        <input type="text" id="bussinessname" name="bussinessname" required>
+                                    </div>
+                                    <div>
+                                        <label>Tell us more</label>
+                                        <textarea id="message" name="message" placeholder="Tell us about your project.." style="height:100px; width: 430px;" required></textarea>
+                                    </div>
+                                    <button class="contactbtn">Send Message</button>
+                                </form>
     
                             </div>
     
@@ -50,23 +92,15 @@
                     </div>
                 </div>
     
+
+                </div>
             </div>
         </div>
-
-        <div class="slide fade">
-            <img src="./assets/2nd page.png" style="height: 100vh;">
-            <div class="text">
-                <h1>Ready-to-use financial solution<br>tailored for bussinessess</h1>
-                <p>Delivering exceptional financial solutions<br> empowered by state-of-the-art-technology</p>
-                <button class="homebtn"><a href="#form" style="color: aliceblue;">Get Started</a></button>
-
-            </div>
     
-            
-
-            </div>
         </div>
+        
     </section>
+
 
     <section class="partner">
         <div>
@@ -86,13 +120,16 @@
                 <img src="./assets/parallel bank.png" id="pix4"/>
                 </div>
                 <div class="grid">
-                <img src="./assets/Sterling (3).png" id="pix5"/>
+                <img src="./assets/Sterling Bank Plc Logo 1.png" id="pix5"/>
                 </div>
                 <div class="grid">
                  <img src="./assets/First City Monument Bank Ltd Logo 1.png" id="pix6"/>   
                 </div>
                 <div class="grid">
                     <img src="./assets/Kuda Bank Logo 1.png" id="pix7"/>
+                </div>
+                <div class="grid">
+                    <img src="./assets/Alternative-Bank.png" alt="" id="pix8">
                 </div>
                 
             </div>
@@ -111,7 +148,7 @@
                 
                 <div class="elbridge">                    
                     <div >
-                        <img src="./assets/elbridge5.png" style="height: 250px;"/>
+                        <img src="./assets/elbridge5.png" style="height: 250px; width: 350px;"/>
                     </div>
                     <div class="elbridge_content">
                         <h2 style="font-size: 15px; color: #002581">ELBRIDGE</h1>
@@ -209,7 +246,7 @@
                     <div class="formcontent">
                         <div class="container">
                             <form id="contactForm" action="https://formsubmit.co/elnexuconsults@gmail.com" method="POST">
-                                <div class="name">
+                                <div class="nam">
                                     <div class="organization">
                                     <label>Name of Organization</label>
                                     <input type="text" id="organization" name="Organization" required>
@@ -400,106 +437,7 @@
 
 
 
-<!--
-    <section class="POS_SALES">
-        <div class="pos-sales">
-            <div>
-                <h1>POS Terminal Sales</h1>
-                <p>
-                    In partnership with a PTSP, our devices and applications have been<br>
-                    licenced by the Nigerian Interbank Settlement system NIBSS. Our <br/>
-                    POS brands are affordable as we directly represent manufactures.
-                </p>
-                <button class="Sbtn">Get started</button>
-            </div>
-            <div class="posImg">
-                <div class="urovo">
-                <img src="./assets/pos-iii 1.png" style="height: 290px;"/>
-                </div>
-                <div class="pos_model">
-                    <h1>Urovo i5000 </h1>
-                    <p>
-                        Lightweight & Portable.<br/>
-                        Android 10.0 and powerful Quad-core<br/> 1.4GHz.
-                         IC cards, contactless cards, QR<br/>
-                        Supports 4G, 3G, 2G, Wi-Fi, Bluetooth,<br/> and GPS positioning.
-                    </p>    
-                    <button class="Urovobtn">Learn more</button>
-                </div>
-            </div>
-        </div>
 
-    </div>
-    <!--
-    <div class="products">
-    <div id="slider">
-        <div class="slidercontainer">
-            <div subcontainer>
-                <div class="slider-wrapper">
-                    <div>
-                        <h2 style="color: white; font-size: 18px;">Our Products</h2>
-                        <br>
-                        <div class="my-slider">
-                            <div>
-                                <div class="slide" >
-                                    <div class="slide-img img1">
-
-                                    </div>
-                                    <br>
-                                    <div class="desc">
-                                      <h3>AISINO</h3> 
-                                      <p>OS: Android 10.
-                                        Card reader slot
-                                        Touch screen.
-                                        Pocket-sizable
-                                    
-                                    </p>     
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="slide">
-                                    <div class="slide-img img2">
-
-                                    </div>
-                                    <br>
-                                    <div class="desc">
-                                      <h3>K-11</h3> 
-                                      <p>Android 7.1/8/10 Camera & Scanner<br>
-                                         Wifi, $G, Bluetooth Dual SIM</p>     
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="slide">
-                                    <div class="slide-img img3">
-
-                                    </div>
-                                    <br>
-                                    <div class="desc">
-                                      <h3>Urovo i5000</h3> 
-                                      <p>Lightweight & Portable.
-                                        Android 10.0 and powerful Quad-core<br/>
-                                        1.4GHz. IC cards, contactless cards, QR<br/>
-
-                                    </p>     
-                                    </div>
-                                </div>
-                            </div>
-
-
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    </div>
--->
     </section>
     <section class="about" id="about">
         <div class="about_content">
@@ -557,7 +495,7 @@
             <h1>Get started it's simple and easy to use</h1>
             <p>Designed to get the job done simple, easy, and straight forward</p>
             <button class="Gbtn"><a href="#form" style="color: white;">Contact us</a></button>
-            <div class="overlay" id="form">
+            <div class="Myoverlay" id="form">
                 <div class="wrapper">
                     <h2>Please Fill Up the form</h2>
                     <p id="successMessage" class="success-message">Form submitted successfully , Thank you for choosing elpay.You will receive an update within 24 hours</p>
@@ -658,5 +596,6 @@
     -->
     </section>
     <script src="./script.js"></script>
+
 </body>
 </html>
