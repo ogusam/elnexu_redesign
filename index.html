@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="./styles.css">
     <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <title>Elnexu Consult</title>
+    
+    
+    <title>Document</title>
+
 </head>
 <body>
 
@@ -35,15 +36,55 @@
         </div>
     </nav>
     <!--home-->
-    <section class="slideshow-container" id="home">
 
-        <!-- Slides -->
-        <div class="slide fade">
-            <img src="./assets/hero 1.png" style="height: 100vh;">
-            <div class="text">
-                <h1>We build both off-the-shelf and bespoke<br> financial solutions for clients</h1>
-                <p>Delivering top notch financial solutions<br> with our cutting edge technology</p>
-                <button class="homebtn"><a href="" style="color: aliceblue;">Get Started</a></button>
+    <section class="home" id="home">
+        <div class="bgImage">
+            <div class="ovelay"></div>
+            <div class="conten">
+                <div style="margin-top: 250px; margin-left: 40px;">
+                    <h1>We build both off-the-shelf and bespoke <br>financial solutions for clients</h1>
+                    <p>Delivering top notch financial solutions with our cutting edge technology</p>
+                    
+                <button class="homebtn"><a href="#form" style="color: aliceblue;">Get Started</a></button>
+
+
+                <div class="Myoverlay" id="form">
+                    <div class="wrapper">
+                        <h2>Please Fill Up the form</h2>
+                        <p id="successMessage" class="success-message">Form submitted successfully , Thank you for choosing elpay.You will receive an update within 24 hours</p>
+    
+                        <a href="#" class="close">&times;</a>
+                        <div class="formcontent">
+                            <div class="container">
+                                <form id="contactForm" action="https://formsubmit.co/elnexuconsults@gmail.com" method="POST">
+                                    <div class="name">
+                                        <div class="firstname">
+                                        <label>First Name</label>
+                                        <input type="text" id="firstname" name="firstname" required>
+                                        </div>
+                                        <div class="lastname">
+                                        <label>Last Name</label>
+                                        <input type="text" id="lastname" name="lastname" required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>Phone Number</label>
+                                        <input type="tel" id="phone" name="phone" required>
+                                    </div>
+                                    <div>
+                                        <label>Email</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                    <div>
+                                        <label>Bussiness Name</label>
+                                        <input type="text" id="bussinessname" name="bussinessname" required>
+                                    </div>
+                                    <div>
+                                        <label>Tell us more</label>
+                                        <textarea id="message" name="message" placeholder="Tell us about your project.." style="height:100px; width: 430px;" required></textarea>
+                                    </div>
+                                    <button class="contactbtn">Send Message</button>
+                                </form>
     
                             </div>
     
@@ -51,10 +92,13 @@
                     </div>
                 </div>
     
+
+                </div>
             </div>
         </div>
     
         </div>
+        
     </section>
 
 
@@ -83,12 +127,6 @@
                 </div>
                 <div class="grid">
                     <img src="./assets/Kuda Bank Logo 1.png" id="pix7"/>
-<<<<<<< HEAD
-                </div>
-                <div class="grid">
-                    <img src="./assets/Alternative-Bank.png" alt="" id="pix8">
-=======
->>>>>>> a8907db14d6274c31c5ea838c1285481afb1ad32
                 </div>
                 <div class="grid">
                     <img src="./assets/Alternative-Bank.png" alt="" id="pix8">
@@ -110,7 +148,7 @@
                 
                 <div class="elbridge">                    
                     <div >
-                        <img src="./assets/elbridge5.png" style="height: 250px;"/>
+                        <img src="./assets/elbridge5.png" style="height: 250px; width: 350px;"/>
                     </div>
                     <div class="elbridge_content">
                         <h2 style="font-size: 15px; color: #002581">ELBRIDGE</h1>
@@ -208,7 +246,7 @@
                     <div class="formcontent">
                         <div class="container">
                             <form id="contactForm" action="https://formsubmit.co/elnexuconsults@gmail.com" method="POST">
-                                <div class="name">
+                                <div class="nam">
                                     <div class="organization">
                                     <label>Name of Organization</label>
                                     <input type="text" id="organization" name="Organization" required>
@@ -457,7 +495,7 @@
             <h1>Get started it's simple and easy to use</h1>
             <p>Designed to get the job done simple, easy, and straight forward</p>
             <button class="Gbtn"><a href="#form" style="color: white;">Contact us</a></button>
-            <div class="overlay" id="form">
+            <div class="Myoverlay" id="form">
                 <div class="wrapper">
                     <h2>Please Fill Up the form</h2>
                     <p id="successMessage" class="success-message">Form submitted successfully , Thank you for choosing elpay.You will receive an update within 24 hours</p>
