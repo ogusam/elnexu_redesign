@@ -1,0 +1,289 @@
+body {
+    
+  background-color:#ECF1FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.logo{
+  height: 3rem;
+  width: 3rem;
+  display: grid;
+  margin-right: .4rem;
+  
+}
+#logo{
+  display: flex;
+  flex-direction:row;
+  margin-left: 4rem;
+  justify-content: space-between;
+  
+}
+.brandname{
+  margin-top: 15px;
+  font-size: 20px;
+  color:rgba(0, 0, 0, 0.594);
+  font-weight: 600; 
+}
+nav {
+  background: white;
+  width: 100%;
+  height: 6rem;
+  display: grid;
+  place-items: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  box-shadow:0 .5rem 1rem rgba(0 ,0 ,0, 0.1)
+  
+}
+
+.nav_container{
+  display: flex;
+  width: var(--container-width-lg);
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.btn{
+  background: #002581;
+  color: #fff;
+  width: 140px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+
+
+@media screen and (max-width:1024px) {
+  .nav_container{
+      width: 92%;
+  }
+  .nav_links {
+      position: absolute;
+      top:100%;
+      right:0;
+      flex-direction: column;
+      gap: 0;
+      align-items: flex-start;
+      display: none;
+  }
+
+  .nav_links li{
+      width:100%;
+
+  }
+
+
+  
+
+}   
+
+.form-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  width: 500px;
+  margin-top: 100px;
+  
+  
+  
+  
+  
+}
+@media screen and (max-width:400px){
+  .form-container{
+      max-width:900px;
+  }
+  .inquiryform{
+      margin-left: 30px;
+  }
+  .logo{
+      height: 2rem;
+      width: 2rem;
+  }
+  .brandname{
+      font-size: 15px;
+      margin-top: 11px;
+  }
+  #logo{
+      margin-left: 2rem;
+  }
+}
+.inquiryform{
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  margin-left: 44px;
+}
+
+
+h2 {
+  margin-bottom: 20px;
+  color: #002581;
+  text-align: center;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #002581;
+}
+
+textarea {
+  width: 380px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+select{
+  width: 400px;
+  height: 30px;
+  border: 1px solid #ccc;
+  
+}
+.inputname input{
+  width: 180px;
+  border:1px solid #ccc;
+  height: 30px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  width: 350px;
+  
+}
+
+/*
+.CHECKBOX input {
+  position: relative;
+  opacity: 1;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin-right: 10PX;
+  
+  
+}
+*/
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color:white;
+  border: 1px solid;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #002581;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 5px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+  
+
+
+
+fieldset input{
+  margin-bottom: 5px;
+}
+legend {
+  font-weight: bold;
+  color: #002581;
+}
+
+.terminal-control {
+  display: flex;
+  align-items: center;
+}
+
+.terminal-control button {
+  padding: 7px 15px;
+  border: 1px solid #ccc;
+  background: #eee;
+  cursor: pointer;
+}
+
+.terminal-control input {
+  text-align: center;
+  width: 30px;
+  height: 25px;
+}
+
+button[type="submit"] {
+  background:#002581;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 25px;
+  width: 120px;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background: #002580;
+}

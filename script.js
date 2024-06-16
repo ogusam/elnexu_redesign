@@ -1,3 +1,5 @@
+
+
 const nav =document.querySelector('.nav_links');
 const openNavBtn = document.querySelector('#nav_toggle-open');
 const closeNavBtn = document.querySelector('#nav_toggle-close');
@@ -56,32 +58,6 @@ function myFunction() {
 
   
   
-
-const btns = document.querySelectorAll(".nav-btn");
-const slides = document.querySelectorAll(".img-slide");
-const contents = document.querySelectorAll(".content");
-
-var sliderNav = function(manual){
-  btns.forEach((btn)=>{
-    btn.classList.remove("active");
-  });
-  slides.forEach((slide)=>{
-    slide.classList.remove("active");
-  });
-
-  contents.forEach((content)=>{
-    content.classList.remove("active");
-  });
-
-  btns[manual].classList.add("active");
-  slides[manual].classList.add("active");
-  contents[manual].classList.add("active");
-};
-  btns.forEach((btn, i)=>{
-    btn.addEventListener("click", ()=>{
-      sliderNav(i);
-    });
-  });
 
 
 
@@ -152,3 +128,23 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
 
 
+function changeTerminalCount(amount) {
+  const terminalInput = document.getElementById('terminals');
+  let currentCount = parseInt(terminalInput.value);
+  currentCount += amount;
+  if (currentCount < 0) currentCount = 0;
+  terminalInput.value = currentCount;
+}
+
+function changeTerminal(amount) {
+  const terminalInput = document.getElementById('pos');
+  let currentCount = parseInt(terminalInput.value);
+  currentCount += amount;
+  if (currentCount < 0) currentCount = 0;
+  terminalInput.value = currentCount;
+}
+
+document.getElementById('business-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  alert('Form submitted successfully!');
+});
