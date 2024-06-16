@@ -154,6 +154,82 @@ nav {
     }
 
 }   
+<<<<<<< HEAD
+=======
+/*home*/
+
+
+
+body {
+    
+    margin: 0;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    height: 100vh;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+    
+    
+
+    
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 50px;
+    
+    margin-left: 40px;
+
+
+    
+}
+.text h1{
+    font-size: 40px;
+}
+.text p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.homebtn{
+    
+    border-radius: 25px;
+    background-color: #002580;
+    border: none;
+    height: 6rem;
+    width: 35rem;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    
+
+}
+
+/* Fade animation */
+.fade {
+    animation-name: fade;
+    animation-duration: .1s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+>>>>>>> a8907db14d6274c31c5ea838c1285481afb1ad32
 
 
 .home{
@@ -302,6 +378,9 @@ nav {
     
     
 }
+.wrapper div{
+    line-height: 20px;
+}
 .wrapper h2{
     margin-bottom: 0;
     color: #333;
@@ -334,19 +413,21 @@ nav {
 }
 input{
     width: 430px;
-    height: 35px;
-    margin-top: 10px;
+    height: 30px;
+    margin-top: 5px;
     
 }
 label{
     display: flex;
-    font-size: 20px;
+    font-size: 15px;
     color: #002580;
+    margin-left: 30px;
 }
 form .name {
     display: flex;
     flex-direction:row;
 
+    
     
 }
 form .name input{
@@ -360,7 +441,14 @@ form .name input{
     align-self: center;
     
 }
-
+.contactbtn{
+    background: #002581;
+    color: #e7e7e7;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+}
 .success-message {
     display: none;
     color: #002580;
@@ -369,6 +457,11 @@ form .name input{
     
 }
 
+<<<<<<< HEAD
+=======
+
+/*partners*/
+>>>>>>> a8907db14d6274c31c5ea838c1285481afb1ad32
 
 .partners{
     /*display: flex;
@@ -411,8 +504,13 @@ form .name input{
     width: 182.32;
 }
 #pix5{
+<<<<<<< HEAD
     height: 80px;
     width: 110px;
+=======
+    height: 90px;
+    width: 150px;
+>>>>>>> a8907db14d6274c31c5ea838c1285481afb1ad32
 }
 #pix6{
     height: 61.02px;
@@ -421,9 +519,12 @@ form .name input{
 #pix7{
     height: 65px;
     width: 143.86px;
+<<<<<<< HEAD
 }
 #pix8{
     height: 60px;
+=======
+>>>>>>> a8907db14d6274c31c5ea838c1285481afb1ad32
 }
 
 
@@ -530,6 +631,7 @@ form .name input{
 
 }
 .inquiry{
+<<<<<<< HEAD
  width: 150px;
  height: 48px;
  background: #002580;
@@ -540,6 +642,18 @@ form .name input{
  margin-bottom: 20px;
  border: none;
  outline: none;
+=======
+    width: 150px;
+    height: 48px;
+    background: #002580;
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+>>>>>>> a8907db14d6274c31c5ea838c1285481afb1ad32
 }
 .elpay_btn{
  width: 150px;
@@ -1181,13 +1295,21 @@ label{
     color: #002580;
     margin-left: 30px;
 }
+<<<<<<< HEAD
 form .nam {
+=======
+form .name {
+>>>>>>> a8907db14d6274c31c5ea838c1285481afb1ad32
     display: flex;
     flex-direction:row;
     
     
 }
+<<<<<<< HEAD
 form .nam input{
+=======
+form .name input{
+>>>>>>> a8907db14d6274c31c5ea838c1285481afb1ad32
     width: 200px;
     margin-right: 30px;
     height: 25px;
