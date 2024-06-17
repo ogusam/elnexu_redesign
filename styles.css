@@ -818,9 +818,10 @@ form .name input{
     font-size: 25px;
 }
 .testimony > p{
-    font-size: 35px;
+    font-size: 25px;
     gap: 2px;
     margin-top: 20px;
+    margin-right: 15px;
     
 }
 .testimony{
